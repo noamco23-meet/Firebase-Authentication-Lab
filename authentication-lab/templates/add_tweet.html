@@ -6,6 +6,12 @@
 </head>
 <body>
     <p>Cool. You're in</p>
+    <form action="/add_tweet" method="POST">
+        <input type="text" name="title" required>
+        <input type="text" name="text" required>
+        <input type="submit"/>
+    </form>
+    
 
     <a href="/signout"><button>sign out</button></a>
 </body>

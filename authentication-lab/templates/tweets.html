@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tweeties</title>
+</head>
+<body>
+    <p>Tweeties</p>
+
+    {% for tweet in tweets%}
+    <p>{{tweets[tweet]['title']}},{{tweets[tweet]['text']}}</p>
+    {% endfor %}
+    <a href="/signout"><button>sign out</button></a>
+</body>
+</html>
